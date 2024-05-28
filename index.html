@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Calkowanie</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+</head>    
+<body>
+    <div class="div1">
+        <form>
+            <label for="formula">f(x) = </label>
+                <input type="text" id="formula" placeholder="x">
+                <br>
+            <label for="a" class="abform">a = </label>
+                <input type="number" id="a" step="0.001" class="ab" placeholder="0">
+                <br>
+            <label for="b" class="abform">b = </label>
+                <input type="number" id="b" step="0.001" class="ab" placeholder="5">
+                <br>
+            <label for="Step">Step = </label>
+                <input type="number" id="step" step="0.00000000001" min="0" placeholder="0,001">
+                <br>
+            <button id="btn" onclick=calc() type="button">Calculate</button>
+            <button id="btnclear" type="reset">Clear</button>
+        </form>
+    </div>
+    <div class="out">
+        <p id="output">Area = </p>
+    </div>
+</body>
+</html>
