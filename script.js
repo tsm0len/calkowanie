@@ -16,7 +16,7 @@ function calc() {
     } else {
         let area = 0;
         while (x <= limit) {
-            area += (f(x, formula)+f(x+step, formula))*step/2;
+            area += abs((f(x, formula)+f(x+step, formula))*step/2);
             x+=step;
         }
         document.getElementById("output").textContent = "Area = " + area;
